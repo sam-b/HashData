@@ -1,0 +1,9 @@
+import re
+
+[A-Fa-f0-9]{32}      -   MD2, MD4, MD5, NTLM or RIPEMD-128
+[A-Fa-f0-9]{40}      -   SHA 160Bit (SHA1), SQL 4.x or RIPEMD-160
+[A-Fa-f0-9]{64}      -   SHA 256Bit
+SHA384Bit="[A-Fa-f0-9]{98}"
+SHA_512Bit = "[A-Fa-f0-9]{130}"
+[A-Fa-f0-9]{16}
+
