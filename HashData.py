@@ -11,7 +11,13 @@ regexs={("^[A-Fa-f0-9]{32}$","MD2, MD4, MD5, NTLM or RIPEMD-128"),
 ("^[A-Fa-f0-9]{130}$","SHA 512Bit(Unix)"),
 ("^[A-Fa-f0-9]{16}$","LM, VNC or MySQL323"),
 ("^.{13}$","DES"),
-("[=]+$","Base64")}
+("[=]+$","Base64"),
+("^[0-9a-f]{120}$","Whirlpool, Whirlpoll (HMAC)"),
+("^[0-9a-f]{8}$","ADLER32"),
+("^[0-9a-f]{4}$","CRC16,CRC16CCITT,FCS16"),
+("^[0-9a-f]{8}$","CRC32,CRC32B"),
+("^[0-9a-f]{32}$","DomainCachedCredentials"),
+("^[0-9]{8}$","GHash323.GHash325")}
 
 print """
 HashData Version 0.2 By DataCurse (Sam Brown, sam@datacurse.org)

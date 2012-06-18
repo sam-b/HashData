@@ -24,7 +24,7 @@ if(len(sys.argv)>1):
 		if(re.search(i[0],sys.argv[1])):
 			result = True
 			print i[1]
-	if !result:
+	if not result:
 		print "Sorry - no matches found!"
 else:
 	print "please provide your hash as a commandline arguement!"
