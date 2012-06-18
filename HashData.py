@@ -1,3 +1,7 @@
+########################################################################
+# HashData Version 0.2 By DataCurse (Sam Brown, sam@datacurse.org)
+# mit license
+###########################################################################
 import re
 import sys
 regexs={("^[A-Fa-f0-9]{32}$","MD2, MD4, MD5, NTLM or RIPEMD-128"),
@@ -6,10 +10,21 @@ regexs={("^[A-Fa-f0-9]{32}$","MD2, MD4, MD5, NTLM or RIPEMD-128"),
 ("^[A-Fa-f0-9]{98}$","SHA 384Bit"),
 ("^[A-Fa-f0-9]{130}$","SHA 512Bit(Unix)"),
 ("^[A-Fa-f0-9]{16}$","LM, VNC or MySQL323"),
-("^.{13}$","DES")}
+("^.{13}$","DES"),
+("[=]+$","Base64")}
+
+print """
+HashData Version 0.2 By DataCurse (Sam Brown, sam@datacurse.org)
+mit license
+Your hash is:
+"""
+result = False
 if(len(sys.argv)>1):
 	for i in regexs:
 		if(re.search(i[0],sys.argv[1])):
+			result = True
 			print i[1]
+	if not result:
+		print "Sorry - no matches found!"
 else:
 	print "please provide your hash as a commandline arguement!"
