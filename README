@@ -1,2 +1,3 @@
-An online hash checker - barely started but I was tidying/organising things while hungover and figured
-I may as well get the repo set up.
+HashData created by Sam Brown (sam@datacurse.org) licensed under the MIT license.
+
+A command line Hash/Encryption/Encoding function detector, After seeing lots of people in the past struggling to identify various hashes and encodings etc I decided to make a simple tool to do it for them. The listings aren't complete and will generally give numerous possibilities for each input due to the nature of a lot of functions having output in a similar format.

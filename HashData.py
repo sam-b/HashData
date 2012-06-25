@@ -15,16 +15,18 @@ regexs={("^[A-Fa-f0-9]{32}$","MD2, MD4, MD5, NTLM or RIPEMD-128"),
 ("^[0-9a-f]{120}$","Whirlpool, Whirlpoll (HMAC)"),
 ("^[0-9a-f]{8}$","ADLER32,CRC32,CRC32B"),
 ("^[0-9a-f]{4}$","CRC16,CRC16CCITT,FCS16"),
-("^[0-9a-f]{32}$","DomainCachedCredentials"),
+("^[0-9a-f]{32}$","DomainCachedCredentials,Haval128,RAdmin v2.x,RipeMD128"),
 ("^[0-9]{8}$","GHash323.GHash325"),
-("^[a-f0-9]{64}$","GOSTR341194, Haval256"),
-("^[a-f0-9]{32}$","Haval128"),
-("^[a-f0-9]{40}$","Haval160"),
+("^[a-f0-9]{64}$","GOSTR341194, Haval256,RipeMD256"),
+("^[a-f0-9]{40}$","Haval160,MySQl5,RipeMD160"),
 ("^[a-f0-9]{48}$","Haval192"),
 ("^[a-f0-9]{56}$","Haval224"),
 ("^0x[a-f0-9]{30}$","LineageIIC4"),
-("^\$apr[A-Za-z0-9$.\/]{32}$","MD5APR"),#incorrect
-("^$H$[.]{32}$","MD5phpBB3")#incorrect}
+("^\$apr[.]{33}$","MD5APR"),
+("^\$H\$[.]{33}$","MD5phpBB3"),
+("^\$1\$[.]{33}$","MD5Unix"),
+("^\$P\$[.]{33}$","MD5WordPress"),
+("^[a-f0-9]{80}$","RipeMD320")}
 
 print """
 HashData Version 0.2 By DataCurse (Sam Brown, sam@datacurse.org)
