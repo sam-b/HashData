@@ -22,24 +22,25 @@ regexs={("^[A-Fa-f0-9]{32}$","MD2, MD4, MD5, NTLM or RIPEMD-128"),
 ("^[a-f0-9]{48}$","Haval192"),
 ("^[a-f0-9]{56}$","Haval224"),
 ("^0x[a-f0-9]{30}$","LineageIIC4"),
-("^\$apr[.]{33}$","MD5APR"),
-("^\$H\$[.]{33}$","MD5phpBB3"),
-("^\$1\$[.]{33}$","MD5Unix"),
-("^\$P\$[.]{33}$","MD5WordPress"),
+("^\$apr.{31}$","MD5APR"),
+("^\$H\$.{31}$","MD5phpBB3"),
+("^\$1\$.{31}$","MD5Unix"),
+("^\$P\$.{31}$","MD5WordPress"),
 ("^[a-f0-9]{80}$","RipeMD320")}
 
 print """
 HashData Version 0.2 By DataCurse (Sam Brown, sam@datacurse.org)
 mit license
-Your hash is:
+Enter exit to exit program.
 """
 result = False
-if(len(sys.argv)>1):
+while True:
+	user_in = raw_input("Please enter your Hash:");
+	if user_in == "exit":
+		break
 	for i in regexs:
-		if(re.search(i[0],sys.argv[1])):
+		if(re.search(i[0],user_in)):
 			result = True
 			print i[1]
 	if not result:
 		print "Sorry - no matches found!"
-else:
-	print "please provide your hash as a commandline arguement!"
