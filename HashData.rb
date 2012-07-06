@@ -4,6 +4,7 @@
 ###########################################################################
 #!/usr/bin/ruby
 
+#create a 2d array of regexs and the names of the functions they match
 regexs=[[/^[A-Fa-f0-9]{32}$/,"MD2, MD4, MD5, NTLM or RIPEMD-128"],
 [/^[A-Fa-f0-9]{40}$/,"SHA160Bit[SHA1],SQL 4.x or RIPEMD-160"],
 [/^[A-Fa-f0-9]{64}$/,"SHA 256Bit[Unix]"],
@@ -37,15 +38,19 @@ result = false
 while true do
 	puts "Please enter your Hash:"
 	user_in = gets;
+	#get the string the user wants to identify end if they type exit
 	if user_in == "exit\n" then
 		break
 	end
+	#loop through the 2D array
 	for i in regexs
+		#if a regex matches print its title
 		if i[0].match(user_in) then
 			result = true
 			puts(i[1])
 		end
 	end
+	#apoligise if it can't be identified
 	if not result then
 		puts "Sorry - no matches found!"
 	end
