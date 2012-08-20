@@ -30,12 +30,7 @@ class HashChecker
 	[/^\*[a-f0-9]{40}$/,"MySQl 160bit"]]
 	def go(user_input)
 		out = ""
-		for i in @@regexs
-			#if a regex matches print its title
-			if i[0].match(user_input) then
-				out += i[1]
-			end
-		end
+		@@regexs.each{ |i| out+=i[1] if i[0].match(user_input) }
 		return out
 	end
 end
