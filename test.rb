@@ -1,6 +1,3 @@
-#used to get all the possible ceaser ciphers of an input which can then be
-#plausability tested to see if theres a chance there the plain text
-class Ceaser
 	def encipher(text,shift)
 		out = ""
 		shift = shift % 26
@@ -9,15 +6,15 @@ class Ceaser
 		end
 		i =0
 		while(i<text.length)
-			c = text[i].downcase.chr
-			if((c>='a') && (c<='z'))
-				if(( c[0].ord + shift) > 'z'[0].ord)
+			c = text[i].upcase.chr
+			if((c>='A') && (c<='Z'))
+				if(( c[0].ord + shift) > 'Z'[0].ord)
 					out << (c[0].ord + shift -26)
 				else
 					out << (c[0].ord + shift)
 				end
 			else
-				out << ' '
+				text << ' '
 			end
 			i+=1
 		end
@@ -32,4 +29,4 @@ class Ceaser
 		end
 		return out
 	end
-end
+puts getAll("hello")
