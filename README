@@ -2,4 +2,4 @@ HashData created by Sam Brown (sam@datacurse.org) licensed under the MIT license
 
 A command line Hash/Encryption/Encoding function detector, After seeing lots of people in the past struggling to identify various hashes and encodings etc I decided to make a simple tool to do it for them. The listings aren't complete and will generally give numerous possibilities for each input due to the nature of a lot of functions having output in a similar format. All the regexs used are provided in a seperate text file foranyone whoever needs them for anything.
 
-I've now begun adding support for ciphers, at the moment it just runs everything on everything but eventually i'll add flags and stuff.
+I've now begun adding support for ciphers, at the moment it just runs everything on everything but eventually i'll add flags and stuff. These are sketchy and may be broken at times.

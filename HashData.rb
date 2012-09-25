@@ -7,27 +7,25 @@
 #create a 2d array of regexs and the names of the functions they match
 require './HashChecker.rb'
 require './Ceaser.rb'
-require './TextCheck.rb'
 puts "
 HashData Version 0.2 By DataCurse [Sam Brown, sam@datacurse.org]
 mit license
 Enter exit to exit program.
 "
-hash_check = HashChecker.new
+hash = HashChecker.new
 ceaser = Ceaser.new
-checker = TextCheck.new
 while true do
 	puts "Please enter your Hash:"
-	user_in = gets;
-	user_in=user_in.chop
+	input = gets;
+	input=input.chop
 	#get the string the user wants to identify end if they type exit
-	if user_in == "exit" then
+	if input == "exit" then
 		break
 	end
-	out = hash_check.go(user_in)
-	ciphers = ceaser.getAll(user_in)
-	ciphers = checker.check(ciphers)
-	puts "possible ceaser ciphers:"
+	out = hash.check(input)
+	ciphers = ceaser.getPossibles(input)
+	puts "possible ciphers:"
+	puts "ceaser:"
 	puts ciphers
 	if out != "" then
 		puts out

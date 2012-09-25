@@ -7,12 +7,13 @@ class TextCheck
 						'oj','pb','pc','pd','pn','pv','pw','py','qm','qr','rj','rk','sk','sv','sy',
 						'tg','tq','tz','uf','uo','uv','vo','vt','wl','wr','ws','wy','xd','xe','xf','xh',
 						'xn','xo','xr','xs','yg','yh','yu','yw','za','zi'])
-	def check(input)
+	#takes an array of strings and returns any viable plain text ones
+	def checkAll(input)
 		viable = []
 		i = 0
 		j = 0
 		while i < input.length
-			if viable(input[i])
+			if checkOne(input[i])
 				viable[j] = input[i]
 				j += 1
 			end
@@ -20,7 +21,7 @@ class TextCheck
 		end
 		return viable
 	end
-	def viable(input)
+	def checkOne(input)
 		i = 0
 		j = 1
 		while j < input.length

@@ -28,7 +28,7 @@ class HashChecker
 	[/^[a-f0-9]{47}$/,"Tiger192"],
 	[/^[a-f0-9]{8}$/,"XOR-32"],
 	[/^\*[a-f0-9]{40}$/,"MySQl 160bit"]]
-	def go(user_input)
+	def check(user_input)
 		out = ""
 		@@regexs.each{ |i| out+=i[1] if i[0].match(user_input) }
 		return out
