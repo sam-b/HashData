@@ -16,7 +16,7 @@ hash = HashChecker.new
 ceaser = Ceaser.new
 while true do
 	puts "Please enter your Hash:"
-	input = gets;
+	input = gets
 	input=input.chop
 	#get the string the user wants to identify end if they type exit
 	if input == "exit" then
