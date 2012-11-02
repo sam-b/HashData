@@ -6,14 +6,12 @@
 
 #create a 2d array of regexs and the names of the functions they match
 require './HashChecker.rb'
-require './Ceaser.rb'
 puts "
 HashData Version 0.2 By DataCurse [Sam Brown, sam@datacurse.org]
 mit license
 Enter exit to exit program.
 "
 hash = HashChecker.new
-ceaser = Ceaser.new
 while true do
 	puts "Please enter your Hash:"
 	input = gets
@@ -23,10 +21,6 @@ while true do
 		break
 	end
 	out = hash.check(input)
-	ciphers = ceaser.getPossibles(input)
-	puts "possible ciphers:"
-	puts "ceaser:"
-	puts ciphers
 	if out != "" then
 		puts out
 	else
