@@ -10,7 +10,7 @@ A command line Hash/Encryption/Encoding function detector, After seeing lots of 
 
 git clone https://github.com/sam-b/HashData.git
 cd HashData
-./HashData.rb
+ruby HashData.rb
 and then paste in hashes when prompted (shift + ins).
 
 ## Supports

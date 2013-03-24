@@ -1,5 +1,3 @@
-#!/usr/bin/ruby
-
 ########################################################################
 # HashData Version 0.2 By Sam Brown, sam@datacurse.org
 # mit license
