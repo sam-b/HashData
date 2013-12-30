@@ -1,6 +1,6 @@
 ## HashData
 
-HashData created by Sam Brown (sam@datacurse.org) licensed under the MIT license.
+HashData created by Sam Brown (samdanielbrown@gmail.com).
 
 ## Description
 
@@ -11,7 +11,7 @@ A command line Hash/Encryption/Encoding function detector, After seeing lots of 
 git clone https://github.com/sam-b/HashData.git  
 cd HashData  
 ruby HashData.rb  
-and then paste in hashes when prompted (shift + ins).  
+and then paste in hashes when prompted.  
 
 ## Supports
 
@@ -64,4 +64,4 @@ Development is on going and new hashes are added sporadically and when requested
 Support for files of hashes coming soon.
 
 ## Contact
-sam@datacurse.org or @sam_bwut for any questions of issues
+samdanielbrown@gmail.com or @sam_bwut for any questions of issues
