@@ -33,7 +33,7 @@ class HashChecker
 	         [/^sha384\$.{0,32}\$[a-f0-9]{96}$/,"SHA-384(Django)"],
 	  	 [/^[a-f0-9]{128}$/,"SHA-512, Whirlpool, Keccak-512, Skein-512, Skein-1024(512)"],
 	         [/^[a-f0-9]{256}$/,"Skein-1024"], 
-		 [/^({SSHA})?[a-z0-9\+\/]{32,38}?(==)?$/,"SSHA-1"],
+		 [/^(\{SSHA\})?[a-zA-Z0-9\+\/]{32,38}?(==)?$/,"SSHA-1"],
 	         [/^\(?[a-z0-9\+\/]{20}\)?$/,"Lotus Domino"],
 		 [/^[a-f0-9]{32}:[a-z0-9]{2}$/,"MD5(osCommerce)"],
 	         [/^[a-f0-9]{32}:[a-f0-9]{32}$/,"SAM(LM_Hash:NT_Hash)"]]
