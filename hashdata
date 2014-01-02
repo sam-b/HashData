@@ -1,3 +1,5 @@
+#!/usr/bin/env ruby
+
 require './hash_checker.rb'
 
 puts 'Use Ctrl+C to exit program.'
