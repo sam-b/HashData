@@ -1,4 +1,4 @@
-require './HashChecker.rb'
+require './hash_checker.rb'
 
 puts 'Use Ctrl+C to exit program.'
 hash = HashChecker.new
