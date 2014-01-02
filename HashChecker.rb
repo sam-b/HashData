@@ -1,4 +1,5 @@
 class HashChecker
+	#create a 2d array of regexs and the names of the functions they match
 	@@regexs=[[/^[a-f0-9]{4}$/,"CRC-16, CRC-16-CCITT, FCS-16"],
 		 [/^[a-f0-9]{8}$/,"Adler32, CRC-32, CRC-32B, FCS-32, GHash-32-3, GHash-32-5, XOR-32, FNV-132, Joaat"],
       		 [/^\+[a-z0-9\/\.]{12}$/,"Blowfish(Eggdrop)"], 
