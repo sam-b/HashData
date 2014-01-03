@@ -23,7 +23,6 @@ and then paste in hashes when prompted.
 - GHash-32-3, GHash-32-5
 - Haval-128, Haval-160, Haval-192, Haval-224, Haval-256
 - Joaat
-- SHA3-224, SHA3-256, SHA3-384, SHA3-512
 - Lineage II C4
 - LM
 - Lotus Domino
@@ -40,6 +39,7 @@ and then paste in hashes when prompted.
 - SHA-1, SHA-1(Django), SHA-1(MaNGOS), SHA-1(MaNGOS2)
 - SHA-224
 - SHA-256, SHA-256(Django), SHA-256(Unix)
+- SHA3-224, SHA3-256, SHA3-384, SHA3-512
 - SHA-384, SHA-384(Django)
 - SHA-512, SHA-512(Drupal), SHA-512(Unix)
 - SSHA-1
