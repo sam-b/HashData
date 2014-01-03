@@ -1,7 +1,7 @@
 # HashData
 A REPL for hash, encoding, and encryption identification tool. The listings aren't complete and will generally give numerous possibilities for each input due to the nature of a lot of functions having output in a similar format.
 
-![](/blob/master/screenshot.tiff)
+![Screenshot](screenshot.png?raw=true)
 
 ## Usage
 ```bash
