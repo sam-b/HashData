@@ -1,5 +1,5 @@
 # HashData
-A REPL for hash, encoding, and encryption identification tool. The listings aren't complete and will generally give numerous possibilities for each input due to the nature of a lot of functions having output in a similar format.
+A REPL for hashing, encoding, and encryption identification. The listings aren't complete and will generally give numerous possibilities for each input due to the nature of a lot of functions having output in a similar format.
 
 ![Screenshot](screenshot.png?raw=true)
 
