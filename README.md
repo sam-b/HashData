@@ -23,7 +23,7 @@ and then paste in hashes when prompted.
 - GHash-32-3, GHash-32-5
 - Haval-128, Haval-160, Haval-192, Haval-224, Haval-256
 - Joaat
-- Keccak-224, Keccak-256, Keccak-384, Keccak-512
+- SHA3-224, SHA3-256, SHA3-384, SHA3-512
 - Lineage II C4
 - LM
 - Lotus Domino
