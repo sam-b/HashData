@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 
-require './hash_checker.rb'
+require './hash_checker'
 
 puts 'Use Ctrl+C to exit program.'
 hash = HashChecker.new
