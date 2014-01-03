@@ -1,8 +1,6 @@
 # HashData
 A REPL for hash, encoding, and encryption identification tool. The listings aren't complete and will generally give numerous possibilities for each input due to the nature of a lot of functions having output in a similar format.
 
-![Screenshot](screenshot.png?raw=true)
-
 ## Usage
 ```bash
 git clone https://github.com/sam-b/HashData.git hashdata
@@ -55,4 +53,4 @@ and then paste in hashes when prompted.
 - XOR-32
 
 ## Development
-Development is on going and new hashes are added sporadically and when requested and errors are fixed whenever reported. Support for files of hashes coming soon.
+Development is on going and new hashes are added sporadically and when requested and errors are fixed whenever reported.
