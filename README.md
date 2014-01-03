@@ -1,6 +1,8 @@
 # HashData
 A REPL for hash, encoding, and encryption identification tool. The listings aren't complete and will generally give numerous possibilities for each input due to the nature of a lot of functions having output in a similar format.
 
+![](/blob/master/screenshot.tiff)
+
 ## Usage
 ```bash
 git clone https://github.com/sam-b/HashData.git hashdata
