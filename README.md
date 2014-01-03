@@ -1,23 +1,15 @@
-## HashData
-
-HashData created by Sam Brown (samdanielbrown@gmail.com).
-
-## Description
-
-A command line Hash/Encryption/Encoding function detector, After seeing lots of people in the past struggling to identify various hashes and encodings etc I decided to make a simple tool to do it for them. The listings aren't complete and will generally give numerous possibilities for each input due to the nature of a lot of functions having output in a similar format. All the regexs used are provided in a seperate text file foranyone whoever needs them for anything.
+# HashData
+A REPL for hash, encoding, and encryption identification tool. The listings aren't complete and will generally give numerous possibilities for each input due to the nature of a lot of functions having output in a similar format.
 
 ## Usage
-
 ```bash
-git clone https://github.com/sam-b/HashData.git  
-cd HashData  
-ruby HashData.rb
+git clone https://github.com/sam-b/HashData.git hashdata
+cd hashdata 
+./hashdata
 ```
-
 and then paste in hashes when prompted.  
 
 ## Supports
-
 - Adler32
 - Blowfish(Eggdrop), Blowfish(OpenBSD)
 - CRC-16, CRC-16-CCITT
@@ -61,10 +53,4 @@ and then paste in hashes when prompted.
 - XOR-32
 
 ## Development
-
-Development is on going and new hashes are added sporadically and when requested and errors are fixed whenever reported.
-
-Support for files of hashes coming soon.
-
-## Contact
-samdanielbrown@gmail.com or @sam_bwut for any questions of issues
+Development is on going and new hashes are added sporadically and when requested and errors are fixed whenever reported. Support for files of hashes coming soon.
