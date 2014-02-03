@@ -5,11 +5,10 @@ A REPL for hashing, encoding, and encryption identification. The listings aren't
 
 ## Usage
 ```bash
-git clone https://github.com/sam-b/HashData.git hashdata
-cd hashdata 
-./hashdata
+$ gem install hashdata
 ```
-and then paste in hashes when prompted.  
+
+When installed, run `hashdata` and paste in hashes when prompted.
 
 ## Supports
 - Adler32
