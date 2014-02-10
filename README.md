@@ -1,3 +1,4 @@
+[![Gem Version](https://badge.fury.io/rb/hashdata.png)](http://badge.fury.io/rb/hashdata)
 # HashData
 A REPL for hashing, encoding, and encryption identification. The listings aren't complete and will generally give numerous possibilities for each input due to the nature of a lot of functions having output in a similar format.
 
