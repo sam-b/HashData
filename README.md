@@ -10,10 +10,10 @@ $ gem install hashdata
 ```
 
 ## Usage
-# Command Line
+#### Command Line
 When installed, run `hashdata` and paste in hashes when prompted.
 
-# Library
+#### Library
 
 Example Script:
 ```ruby

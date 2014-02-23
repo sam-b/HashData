@@ -2,7 +2,7 @@ require 'hashdata'
 require 'rspec'
 
 # Generated using the python "crypt" library for the string 'hashdata' with a salt of 'hashdata':
-# >> python <<
+# >> python version 2.7.1<<
 # import crypt
 # crypt.crypt('hashdata','hashdata')
 describe HashData do
