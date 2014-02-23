@@ -1,9 +1,9 @@
-class HashChecker
+class HashData
   PATTERNS = [
     [/^[a-f0-9]{4}$/, 'CRC-16, CRC-16-CCITT, FCS-16'],
     [/^[a-f0-9]{8}$/, 'Adler32, CRC-32, CRC-32B, FCS-32, GHash-32-3, GHash-32-5, XOR-32, FNV-132, Joaat'],
     [/^\+[a-z0-9\/\.]{12}$/, 'Blowfish(Eggdrop)'],
-    [/^.{0,2}[a-z0-9\/\.]{11}$/, 'DES(Unix)'],
+    [/^.{0,2}[a-zA-Z0-9\/\.]{11}$/, 'DES(Unix)'],
     [/^[a-f0-9]{16}$/, 'MySQL3.x, LM, DES(Oracle), VNC, FNV-164'],
     [/^[a-z0-9\/\.]{16}$/, 'MD5(Cisco PIX)'],
     [/^\$1\$.{0,8}\$[a-z0-9\/\.]{22}$/, 'MD5(Unix)'],
@@ -43,5 +43,12 @@ class HashChecker
 
   def check(input)
     PATTERNS.map { |i| i[1] if i[0].match(input) }.compact.uniq.join(', ')
+  end
+
+  def check_type(input, hashtype)
+    PATTERNS.each do |i|
+      return true if i[0].match(input) and i[1].start_with?(hashtype)
+    end
+    false
   end
 end

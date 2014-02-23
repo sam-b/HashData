@@ -5,7 +5,7 @@ $LOAD_PATH.unshift(File.dirname(File.realpath(__FILE__)) + '/../lib')
 require 'hashdata'
 
 puts 'Use Ctrl+C to exit program.'
-hash = HashChecker.new
+hash = HashData.new
 
 loop do
   print('Enter your Hash: ')

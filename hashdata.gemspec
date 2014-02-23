@@ -4,13 +4,13 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |spec|
   spec.name          = 'hashdata'
-  spec.version       = '0.0.1'
+  spec.version       = '0.0.2'
   spec.authors       = ['Sam Brown']
   spec.email         = ['samdanielbrown@gmail.com']
   spec.summary       = %q{A command line Hash Identifying tool.}
   spec.homepage      = 'https://github.com/sam-b/HashData'
   spec.license       = 'MIT'
-
+  spec.description   = 'A command line hash identifying tool and checking library.'
   spec.files         = `git ls-files -z`.split("\x0")
   spec.executables   = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
@@ -18,4 +18,5 @@ Gem::Specification.new do |spec|
 
   spec.add_development_dependency 'bundler', '~> 1.5'
   spec.add_development_dependency 'rake', '~> 10.1'
+  spec.add_development_dependency 'rspec', '~> 2.14.5'
 end

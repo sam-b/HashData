@@ -4,12 +4,25 @@ A REPL for hashing, encoding, and encryption identification. The listings aren't
 
 ![Screenshot](screenshot.png?raw=true)
 
-## Usage
+## Install
 ```bash
 $ gem install hashdata
 ```
 
+## Usage
+# Command Line
 When installed, run `hashdata` and paste in hashes when prompted.
+
+# Library
+
+Example Script:
+```ruby
+require 'hashdata'
+hash = HashData.new
+puts(hash.check_type("1111111111111",'DES'))
+```
+Should output true. The library only matches the start of your second input, this means that you can check something is an
+MD5 hash without having to worry about wether it is from Joomla or Unix for example.
 
 ## Supports
 - Adler32
