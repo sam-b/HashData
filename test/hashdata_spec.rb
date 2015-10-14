@@ -9,4 +9,7 @@ describe HashData do
   it 'recognizes a DES(UNIX) hash' do
     HashData.new.check_type('haLgYBnzoVJi6','DES(Unix)').should eq(true)
   end
+  it 'recognizes Base64 encoded strings' do
+    HashData.new.check_type('aGVsbG90aGVyZQ==','Base64').should eq(true)
+  end
 end
