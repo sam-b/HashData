@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |spec|
   spec.name          = 'hashdata'
-  spec.version       = '0.0.2'
+  spec.version       = '0.0.3'
   spec.authors       = ['Sam Brown']
   spec.email         = ['samdanielbrown@gmail.com']
   spec.summary       = %q{A command line Hash Identifying tool.}
